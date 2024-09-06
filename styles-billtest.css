@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: rgb(72, 17, 28);
+}
+
+/*  
+255, 255, 255 	white
+244, 236, 208	cream
+129, 20, 41		red
+72, 17, 28		dark red
+*/
+
+.header {
+    padding: 1px;
+    text-align: center;
+    background: rgb(129, 20, 41 );
+}
+
+.header h1 {
+    font-size: 5vw;
+	color: white;
+	/* font-family:Helvetica, sans-serif; */
+}
+
+.card {
+    background-color: rgb(255, 255, 255 );
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.bottomnav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(129, 20, 41 );
+    float: center;
+}
+
+.bottomnav :last-child {
+    border-right: none;
+}
+
+.bottomnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid #bbb;
+}
+
+.bottomnav a:hover:not(.active) {
+    background-color: rgb(255, 255, 255 );
+	color: black;
+}
