@@ -38,6 +38,17 @@ body {
     font-size: 1vw;
 }
 
+.row {
+    display: flex;
+    gap: 10px;
+}
+.rowitem1{
+    flex: 2;
+}
+.rowitem2{
+    flex: 1;
+}
+
 .bottomnav {
     position: sticky;
     top: 0;
@@ -65,8 +76,8 @@ body {
 }
 
 .bottomnav a:hover:not(.active) {
-    background-color: rgb(255, 255, 255 );
-	color: rgb(129, 20, 41 );
+    background-color: rgb(255, 255, 255);
+    color: rgb(129, 20, 41);
 }
 
 /* Fixed length side navigation bar */
