@@ -33,6 +33,10 @@ body {
     margin-top: 20px;
 }
 
+.card p {
+    font-size: 1vw;
+}
+
 .bottomnav {
     position: sticky;
     top: 0;
@@ -173,9 +177,10 @@ html {
 
 .cs-student-container-right {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-        'leftcolumn rightcolumn';
+        'titlecolumn titlecolumn picturecolumn'
+        'buttoncolumn buttoncolumn picturecolumn';
     gap: 10px;
     text-align: center;
     align-items: center;
@@ -183,36 +188,35 @@ html {
 
 .cs-student-container-left {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-        'leftcolumn rightcolumn';
+        'picturecolumn titlecolumn titlecolumn'
+        'picturecolumn buttoncolumn buttoncolumn';
     gap: 10px;
     text-align: center;
     align-items: center;
 }
 
-.left {
-    grid-area: leftcolumn;
-    line-height: 0;
+.titlecolumn {
+    grid-area: titlecolumn;
+    font-size: 2vw;
+    text-align: center;
 }
 
-.left h1 {
-    font-size: 3vw;
-}
-
-.left p {
+.titlecolumn p {
     font-size: 2vw;
 }
 
-.right {
-    grid-area: rightcolumn;
-    line-height: 0;
+.picturecolumn {
+    grid-area: picturecolumn;
 }
 
-.right h1 {
-    font-size: 3vw;
+.buttoncolumn {
+    grid-area: buttoncolumn;
+    line-height: 1;
+    height: 150%;
 }
 
-.right p {
-    font-size: 2vw;
+.buttoncolumn p {
+    font-size: 1.5vw;
 }
