@@ -31,6 +31,7 @@ body {
     background-color: rgb(255, 255, 255 );
     padding: 20px;
     margin-top: 20px;
+    word-wrap: break-word
 }
 
 .bottomnav {
