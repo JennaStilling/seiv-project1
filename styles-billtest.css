@@ -64,8 +64,8 @@ body {
 }
 
 .bottomnav a:hover:not(.active) {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    background-color: rgb(255, 255, 255 );
+	color: rgb(129, 20, 41 );
 }
 
 /* Fixed length side navigation bar */
