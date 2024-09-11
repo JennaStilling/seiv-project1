@@ -18,19 +18,35 @@ body {
 .header {
     padding: 1px;
     text-align: center;
-    background: rgb(129, 20, 41 );
+    background: rgb(129, 20, 41);
 }
 
 .header h1 {
     font-size: 5vw;
-	color: white;
-	/* font-family:Helvetica, sans-serif; */
+    color: white;
+    /* font-family:Helvetica, sans-serif; */
 }
 
 .card {
-    background-color: rgb(255, 255, 255 );
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     margin-top: 20px;
+    word-wrap: break-word
+}
+
+.card p {
+    font-size: 1vw;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+.rowitem1{
+    flex: 2;
+}
+.rowitem2{
+    flex: 1;
 }
 
 .bottomnav {
@@ -41,7 +57,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(129, 20, 41 );
+    background-color: rgb(129, 20, 41);
     float: center;
 }
 
@@ -60,8 +76,8 @@ body {
 }
 
 .bottomnav a:hover:not(.active) {
-    background-color: rgb(255, 255, 255 );
-	color: black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(129, 20, 41);
 }
 
 /* Fixed length side navigation bar */
@@ -75,37 +91,41 @@ body {
     background-color: rgb(129, 20, 41);
     overflow-x: hidden;
     padding-top: 20px;
-  }
-  
-  /* Properties for the links within the side navigation bar */
-  .sidenav a {
+}
+
+/* Properties for the links within the side navigation bar */
+.sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
     color: white;
     display: block;
     border-bottom: 1px solid #bbb;
-  }
-  
-  /* Hover property */
-  .sidenav a:hover {
+}
+
+/* Hover property */
+.sidenav a:hover {
     color: rgb(129, 20, 41);
-    background-color:white;
-  }
-  
-  /* Class for the main text */
-  .main {
-    margin-left: 300px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
+    background-color: white;
+}
+
+/* Class for the main text */
+.main {
+    margin-left: 300px;
+    /* Same as the width of the sidenav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
     padding: 0px 0px;
-    background-color: rgb(255, 255, 255 );
-  }
+    background-color: rgb(255, 255, 255);
+}
 
-  /* Scroll Animation */
-  html { scroll-behavior: smooth; }
+/* Scroll Animation */
+html {
+    scroll-behavior: smooth;
+}
 
-  /* Button design for the Learn More button */
-  .button {
+/* Button design for the Learn More button */
+.button {
     background-color: rgb(72, 17, 28);
     border: none;
     color: white;
@@ -114,10 +134,10 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-  }
+}
 
-  /* Grid container that held the title, text, button and image */
-  .grid-container {
+/* Grid container that held the title, text, button and image */
+.grid-container {
     display: grid;
     grid-template-areas:
         'header image'
@@ -125,10 +145,10 @@ body {
         'button image';
     gap: 10px;
     padding: 10px;
-  }
+}
 
-  /* Alternative container with the image on the left */
-  .grid-container-alt {
+/* Alternative container with the image on the left */
+.grid-container-alt {
     display: grid;
     grid-template-areas:
         'image header'
@@ -136,26 +156,79 @@ body {
         'image button';
     gap: 10px;
     padding: 10px;
-  }
+}
 
-  /* Grid element for title */
-  .title {
+/* Grid element for title */
+.title {
     text-align: center;
     grid-area: header;
-  }
+}
 
-  /* Grid element for the image */
-  .image {
+/* Grid element for the image */
+.image {
     grid-area: image;
-  }
+    text-align: center;
+}
 
-  /* Grid element for the text */
-  .text {
+/* Grid element for the text */
+.text {
     grid-area: text;
-  }
+    text-align: center;
+}
 
-  /* Grid element for button */
-  .buttonArea {
+/* Grid element for button */
+.buttonArea {
     grid-area: button;
     text-align: center;
-  }
+}
+
+.thinner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cs-student-container-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'titlecolumn titlecolumn picturecolumn'
+        'buttoncolumn buttoncolumn picturecolumn';
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.cs-student-container-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'picturecolumn titlecolumn titlecolumn'
+        'picturecolumn buttoncolumn buttoncolumn';
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.titlecolumn {
+    grid-area: titlecolumn;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.titlecolumn p {
+    font-size: 2vw;
+}
+
+.picturecolumn {
+    grid-area: picturecolumn;
+}
+
+.buttoncolumn {
+    grid-area: buttoncolumn;
+    line-height: 1;
+    height: 150%;
+}
+
+.buttoncolumn p {
+    font-size: 1.5vw;
+}
