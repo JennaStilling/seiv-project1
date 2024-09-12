@@ -1,5 +1,6 @@
 
-/* override style for some elements */
+/* override style for some elements in the main css file */
+
 .column {
     float: left;
     width: 33.3%;
