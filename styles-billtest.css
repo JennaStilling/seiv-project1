@@ -35,7 +35,7 @@ body {
 }
 
 .card p {
-    font-size: 1vw;
+    font-size: 20px;
 }
 
 .row {
@@ -173,7 +173,7 @@ html {
 /* Grid element for the text */
 .text {
     grid-area: text;
-    text-align: center;
+    text-align: left;
 }
 
 /* Grid element for button */
@@ -231,4 +231,22 @@ html {
 
 .buttoncolumn p {
     font-size: 1.5vw;
+}
+
+.twoColumn {
+    width: 100%;
+    float: left;
+    padding: 2px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 2px;
+}
+
+.responsivePhotos {
+    width: 100%; 
+    height: auto; 
+    display: block;
 }
