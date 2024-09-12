@@ -267,3 +267,48 @@ html {
     max-width: 200px;
     height:200px;
 }
+
+.twobytwogrid {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.griditem {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 200px;
+}
+
+.stackedImg {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px
+}
+
+.twoColumn {
+    width: 100%;
+    float: left;
+    padding: 2px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 2px;
+}
+
+.column2 {
+    float: center;
+    width: 50%;
+    padding: 2px;
+}
